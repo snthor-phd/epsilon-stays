@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epsilon Stays</title>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">Epsilon Stays</a>
+    <p class="tagline">Where we stayed, and which site to ask for.</p>
+    <p class="rig">Our rig: <strong>24 ft trailer</strong> &middot;
+       <strong>46 ft combined</strong> &middot; 30A
+       <span class="rig-detail">(2022 Airstream Globetrotter 23FB Twin behind a 2025 RAM 2500 diesel)</span></p>
+    <p class="home-link"><a href="https://adventuresinepsilon.com">&larr; Epsilon Adventures</a></p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <p>A running record of the campgrounds we've stayed in and &mdash; the part that's usually
+       missing &mdash; <strong>which individual site to ask for</strong> once you get there.</p>
+  </section>
+
+  <section class="controls">
+    <input type="search" id="q" placeholder="Search campgrounds&hellip;" aria-label="Search">
+    <select id="region"><option value="">All states / provinces</option><option value="MB">MB</option><option value="ND">ND</option></select>
+    <select id="type"><option value="">All types</option><option value="fairgrounds">Fairgrounds</option><option value="private">Private</option></select>
+    <label class="check"><input type="checkbox" id="approved"> Epsilon Approved only</label>
+    <label class="check"><input type="checkbox" id="stayedonly"> Stayed only</label>
+  </section>
+
+  <section id="list" class="cards">
+  <article class="card" data-type="fairgrounds"
+      data-region="ND"
+      data-approved="0"
+      data-status="stayed"
+      data-name="north dakota state fairgrounds">
+    <h2><a href="c/nd-state-fairgrounds-minot/index.html">North Dakota State Fairgrounds</a> </h2>
+    <p class="meta">Minot, ND &middot; Fairgrounds</p>
+    <p class="meta">0 sites noted
+       &middot; last stayed 2026-08-27</p>
+    <p class="excerpt"></p>
+  </article>
+  <article class="card" data-type="private"
+      data-region="MB"
+      data-approved="0"
+      data-status="planned"
+      data-name="town &amp; country campground">
+    <h2><a href="c/town-and-country-winnipeg/index.html">Town &amp; Country Campground</a> </h2>
+    <p class="meta">Winnipeg, MB &middot; Private</p>
+    <p class="meta">1 site noted
+       &middot; <em>not yet stayed</em></p>
+    <p class="excerpt"></p>
+  </article>
+  </section>
+  <p id="empty" class="empty" hidden>Nothing matches those filters.</p>
+</main>
+
+<script>
+(function () {
+  var q = document.getElementById('q'),
+      region = document.getElementById('region'),
+      type = document.getElementById('type'),
+      approved = document.getElementById('approved'),
+      stayedonly = document.getElementById('stayedonly'),
+      cards = Array.prototype.slice.call(document.querySelectorAll('.card')),
+      empty = document.getElementById('empty');
+
+  function apply() {
+    var term = q.value.trim().toLowerCase(), shown = 0;
+    cards.forEach(function (c) {
+      var ok = true;
+      if (term && c.dataset.name.indexOf(term) === -1) ok = false;
+      if (region.value && c.dataset.region !== region.value) ok = false;
+      if (type.value && c.dataset.type !== type.value) ok = false;
+      if (approved.checked && c.dataset.approved !== '1') ok = false;
+      if (stayedonly.checked && c.dataset.status !== 'stayed') ok = false;
+      c.hidden = !ok;
+      if (ok) shown++;
+    });
+    empty.hidden = shown !== 0;
+  }
+  [q, region, type, approved, stayedonly].forEach(function (el) {
+    el.addEventListener('input', apply);
+    el.addEventListener('change', apply);
+  });
+})();
+</script>
+<footer class="foot">
+  <div class="wrap">
+    <p>Updated 2026-08-30 &middot; part of
+       <a href="https://adventuresinepsilon.com">Epsilon Adventures</a></p>
+    <p class="fine">Every judgment here is ours, made against a 24 ft trailer.
+       Campgrounds change &mdash; check the last-stayed date before you trust a note.</p>
+  </div>
+</footer>
+</body>
+</html>
