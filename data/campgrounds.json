@@ -444,11 +444,11 @@
       "type": "harvest_hosts",
       "website": "https://wildstatecider.com/",
       "phone": null,
-      "reservation_system": null,
+      "reservation_system": "Harvest Hosts membership — request the stay through Harvest Hosts, not a reservation system",
       "season": null,
       "price_range": null,
       "epsilon_approved": null,
-      "overall": "Great people. Good for small rigs only, under 30 feet. The pizza is above average and the cider is very good. A nice place to meet friends. Room for only one rig as far as we could see.",
+      "overall": "A working cidery and taproom in Duluth, not a campground — an overnight stop through Harvest Hosts. Great people. Good for small rigs only, under 30 feet, and room for only one rig as far as we could see. The pizza is above average and the cider is very good. A nice place to meet friends. Harvest Hosts etiquette applies: arrive within business hours, one night, and buy something.",
       "map_file": null,
       "map_url": null,
       "map_source": null,
@@ -488,7 +488,7 @@
           "noise": null,
           "to_bathhouse_ft": null,
           "verdict": "Fits our 24 ft with room to spare.",
-          "notes": "Room for only one rig as far as we could see. Under 30 feet.",
+          "notes": "Room for only one rig as far as we could see. Under 30 feet. A business lot, not a numbered campsite — no hookups, no water, no dump.",
           "photos": []
         }
       ]
