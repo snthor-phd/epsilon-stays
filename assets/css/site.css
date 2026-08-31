@@ -201,3 +201,28 @@ body {
   .detail h1 { font-size: 1.5rem; }
   .sitegrid { grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr)); }
 }
+
+/* ---------- campground maps ---------- */
+
+.cgmap {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: .75rem 0;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.maplink {
+  margin: .4rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: .88rem;
+}
+
+.maplink a { color: var(--accent); }
+
+.has-map {
+  color: var(--accent);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}

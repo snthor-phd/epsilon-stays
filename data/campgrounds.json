@@ -48,7 +48,11 @@
           "occasion": "69th Airstream Club International Rally"
         }
       ],
-      "sites": []
+      "sites": [],
+      "map_file": null,
+      "map_url": null,
+      "map_source": null,
+      "map_license": null
     },
     {
       "id": "town-and-country-winnipeg",
@@ -106,7 +110,11 @@
           "notes": "Assigned site for the caravan rendezvous. Not yet stayed.",
           "photos": []
         }
-      ]
+      ],
+      "map_file": null,
+      "map_url": null,
+      "map_source": null,
+      "map_license": null
     },
     {
       "id": "juniper-trnp-north",
@@ -164,7 +172,11 @@
           "notes": "Views of buffalo and wild turkey, and many species of bird. No hookups (campground-wide). Generator use 8 a.m. to 8 p.m. local time.",
           "photos": []
         }
-      ]
+      ],
+      "map_file": "assets/maps/juniper-trnp-north.png",
+      "map_url": "https://www.nps.gov/thro/planyourvisit/juniper-campground.htm",
+      "map_source": "National Park Service",
+      "map_license": "public-domain-us-gov"
     },
     {
       "id": "cottonwood-trnp-south",
@@ -180,12 +192,12 @@
       "website": "https://www.nps.gov/thro/planyourvisit/camping.htm",
       "phone": null,
       "reservation_system": "Recreation.gov for about half the sites; remainder first-come, first-served",
-      "season": null,
+      "season": "North loop year-round; south loop mid-May to September",
       "price_range": null,
       "epsilon_approved": null,
       "overall": "South Unit campground on the Little Missouri. No hookups, generators 8 a.m. to 8 p.m. local. Site choice matters more here than at Juniper — the pull-throughs are not all what they look like on the map.",
       "amenities": {
-        "dump": null,
+        "dump": false,
         "potable_water": true,
         "laundry": false,
         "showers": false,
@@ -302,7 +314,11 @@
           "notes": "Among the best sites in the campground.",
           "photos": []
         }
-      ]
+      ],
+      "map_file": "assets/maps/cottonwood-trnp-south.png",
+      "map_url": "https://www.nps.gov/thro/planyourvisit/map-of-cottonwood-campground.htm",
+      "map_source": "National Park Service",
+      "map_license": "public-domain-us-gov"
     }
   ]
 }

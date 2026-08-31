@@ -125,6 +125,7 @@ def build_index(data):
     <p class="meta">{nsites} site{'s' if nsites != 1 else ''} noted{f' &middot; {nfit} fit our rig' if nfit else ''}
        &middot; {('last stayed ' + esc(ls)) if ls else ('stayed &mdash; dates not recorded' if stayed else '<em>not yet stayed</em>')}</p>
     <p class="excerpt">{esc((cg.get('overall') or '')[:180])}</p>
+    {'<p class="meta has-map">&#9906; Campground map available</p>' if (cg.get('map_file') or cg.get('map_url')) else ''}
   </article>""")
 
     regions = sorted({c["location"].get("region") for c in cgs if c["location"].get("region")})
@@ -230,6 +231,27 @@ def build_campground(data, cg):
     badge = '<span class="badge">Epsilon Approved</span>' if cg.get("epsilon_approved") else ""
     a = cg.get("amenities", {})
 
+    mf, mu = cg.get("map_file"), cg.get("map_url")
+    if mf:
+        up = "../../"
+        credit = esc(cg.get("map_source") or "")
+        official = (f'<p class="meta">Official page: <a href="{esc(mu)}">{esc(mu)}</a></p>' if mu else "")
+        map_section = f"""<section>
+    <h2>Campground map</h2>
+    <p class="maplink"><a href="{up}{esc(mf)}">Open the full-size campground map</a></p>
+    <a href="{up}{esc(mf)}"><img class="cgmap" src="{up}{esc(mf)}" alt="Campground map" loading="lazy"></a>
+    <p class="fine">Map: {credit}. Public domain (U.S. Government work).</p>
+    {official}
+  </section>"""
+    elif mu:
+        map_section = f"""<section>
+    <h2>Campground map</h2>
+    <p class="maplink"><a href="{esc(mu)}">View the campground map</a></p>
+    <p class="fine">Hosted by the campground &mdash; linked rather than copied.</p>
+  </section>"""
+    else:
+        map_section = ""
+
     stays = "".join(
         f"<li>{esc(s.get('arrive'))}{' &ndash; ' + esc(s['depart']) if s.get('depart') else ''} "
         f"&middot; <span class=\"tag\">{esc(s.get('status'))}</span>"
@@ -264,6 +286,8 @@ def build_campground(data, cg):
     </dl>
     {'<p><a href="' + esc(cg['website']) + '">Campground website</a></p>' if cg.get('website') else ''}
   </section>
+
+  {map_section}
 
   <section>
     <h2>Our stays</h2>

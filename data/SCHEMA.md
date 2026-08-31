@@ -69,3 +69,24 @@ The heart of it — the part nobody else publishes.
 4. Set `epsilon_approved` if it earned it
 5. Bump `meta.updated`
 6. `./deploy.sh`
+
+---
+
+## Campground maps
+
+Four optional fields on each campground record:
+
+| Field | Notes |
+|---|---|
+| `map_file` | Repo-relative path, e.g. `assets/maps/<id>.png`. Only when the map may lawfully be redistributed. |
+| `map_url` | The official page the map lives on. Always safe to set. |
+| `map_source` | Who made it, e.g. `National Park Service` |
+| `map_license` | `public-domain-us-gov`, `permission-granted`, or `link-only` |
+
+**The licensing rule.** Maps produced by the National Park Service, the Forest Service, the Corps
+of Engineers, BLM and other U.S. federal agencies are public domain and can be copied into the
+repo and displayed. **Maps from state parks, private campgrounds, KOA, Harvest Hosts and
+commercial guide sites are copyrighted** — set `map_url` only and leave `map_file` null. The
+build renders an inline map when `map_file` is present and a plain outbound link when it isn't.
+
+Where a map exists but neither field is set, it simply doesn't render. Worth filling in over time.
