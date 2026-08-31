@@ -27,12 +27,34 @@
   <section class="controls">
     <input type="search" id="q" placeholder="Search campgrounds&hellip;" aria-label="Search">
     <select id="region"><option value="">All states / provinces</option><option value="MB">MB</option><option value="ND">ND</option></select>
-    <select id="type"><option value="">All types</option><option value="fairgrounds">Fairgrounds</option><option value="private">Private</option></select>
+    <select id="type"><option value="">All types</option><option value="fairgrounds">Fairgrounds</option><option value="national_park">National Park</option><option value="private">Private</option></select>
     <label class="check"><input type="checkbox" id="approved"> Epsilon Approved only</label>
     <label class="check"><input type="checkbox" id="stayedonly"> Stayed only</label>
   </section>
 
   <section id="list" class="cards">
+  <article class="card" data-type="national_park"
+      data-region="ND"
+      data-approved="0"
+      data-status="stayed"
+      data-name="cottonwood campground (trnp south unit)">
+    <h2><a href="c/cottonwood-trnp-south/index.html">Cottonwood Campground (TRNP South Unit)</a> </h2>
+    <p class="meta">Medora, ND &middot; National Park</p>
+    <p class="meta">5 sites noted
+       &middot; stayed &mdash; dates not recorded</p>
+    <p class="excerpt">South Unit campground on the Little Missouri. No hookups, generators 8 a.m. to 8 p.m. local. Site choice matters more here than at Juniper — the pull-throughs are not all what they</p>
+  </article>
+  <article class="card" data-type="national_park"
+      data-region="ND"
+      data-approved="1"
+      data-status="stayed"
+      data-name="juniper campground (trnp north unit)">
+    <h2><a href="c/juniper-trnp-north/index.html">Juniper Campground (TRNP North Unit)</a> <span class="badge">Epsilon Approved</span></h2>
+    <p class="meta">Watford City, ND &middot; National Park</p>
+    <p class="meta">1 site noted
+       &middot; stayed &mdash; dates not recorded</p>
+    <p class="excerpt">Dry camping in the quieter North Unit, five miles in from the Highway 85 entrance along the Little Missouri. No hookups anywhere in the campground, generators 8 a.m. to 8 p.m. loca</p>
+  </article>
   <article class="card" data-type="fairgrounds"
       data-region="ND"
       data-approved="0"

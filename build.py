@@ -88,6 +88,10 @@ def footer(meta):
 """
 
 
+def has_stayed(cg):
+    return any(s.get("status") == "stayed" for s in cg.get("stays", []))
+
+
 def last_stayed(cg):
     dates = [s.get("depart") or s.get("arrive")
              for s in cg.get("stays", []) if s.get("status") == "stayed"]
@@ -104,12 +108,13 @@ def build_index(data):
     cards = []
     for cg in sorted(cgs, key=lambda c: c["name"]):
         ls = last_stayed(cg)
+        stayed = has_stayed(cg)
         loc = cg["location"]
         where = ", ".join(x for x in [loc.get("city"), loc.get("region")] if x)
         badge = '<span class="badge">Epsilon Approved</span>' if cg.get("epsilon_approved") else ""
         nsites = len(cg.get("sites", []))
         nfit = len(fitting_sites(cg))
-        status = "stayed" if ls else "planned"
+        status = "stayed" if stayed else "planned"
         cards.append(f"""  <article class="card" data-type="{esc(cg.get('type',''))}"
       data-region="{esc(loc.get('region',''))}"
       data-approved="{'1' if cg.get('epsilon_approved') else '0'}"
@@ -118,7 +123,7 @@ def build_index(data):
     <h2><a href="c/{esc(cg['id'])}/index.html">{esc(cg['name'])}</a> {badge}</h2>
     <p class="meta">{esc(where)} &middot; {esc(TYPE_LABELS.get(cg.get('type'), cg.get('type') or ''))}</p>
     <p class="meta">{nsites} site{'s' if nsites != 1 else ''} noted{f' &middot; {nfit} fit our rig' if nfit else ''}
-       &middot; {'last stayed ' + esc(ls) if ls else '<em>not yet stayed</em>'}</p>
+       &middot; {('last stayed ' + esc(ls)) if ls else ('stayed &mdash; dates not recorded' if stayed else '<em>not yet stayed</em>')}</p>
     <p class="excerpt">{esc((cg.get('overall') or '')[:180])}</p>
   </article>""")
 

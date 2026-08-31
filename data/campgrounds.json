@@ -16,7 +16,13 @@
     {
       "id": "nd-state-fairgrounds-minot",
       "name": "North Dakota State Fairgrounds",
-      "location": { "city": "Minot", "region": "ND", "country": "USA", "lat": null, "lon": null },
+      "location": {
+        "city": "Minot",
+        "region": "ND",
+        "country": "USA",
+        "lat": null,
+        "lon": null
+      },
       "type": "fairgrounds",
       "website": null,
       "phone": null,
@@ -47,7 +53,13 @@
     {
       "id": "town-and-country-winnipeg",
       "name": "Town & Country Campground",
-      "location": { "city": "Winnipeg", "region": "MB", "country": "Canada", "lat": null, "lon": null },
+      "location": {
+        "city": "Winnipeg",
+        "region": "MB",
+        "country": "Canada",
+        "lat": null,
+        "lon": null
+      },
       "type": "private",
       "website": null,
       "phone": null,
@@ -92,6 +104,202 @@
           "to_bathhouse_ft": null,
           "verdict": "",
           "notes": "Assigned site for the caravan rendezvous. Not yet stayed.",
+          "photos": []
+        }
+      ]
+    },
+    {
+      "id": "juniper-trnp-north",
+      "name": "Juniper Campground (TRNP North Unit)",
+      "location": {
+        "city": "Watford City",
+        "region": "ND",
+        "country": "USA",
+        "lat": null,
+        "lon": null
+      },
+      "type": "national_park",
+      "website": "https://www.nps.gov/thro/planyourvisit/camping.htm",
+      "phone": null,
+      "reservation_system": "First-come, first-served (standard sites non-reservable; group site via Recreation.gov)",
+      "season": "Open year-round; water and dump station seasonal",
+      "price_range": null,
+      "epsilon_approved": true,
+      "overall": "Dry camping in the quieter North Unit, five miles in from the Highway 85 entrance along the Little Missouri. No hookups anywhere in the campground, generators 8 a.m. to 8 p.m. local. Wildlife comes through the campground rather than the other way around.",
+      "amenities": {
+        "dump": true,
+        "potable_water": true,
+        "laundry": false,
+        "showers": false,
+        "wifi_quality": null,
+        "cell_carrier": null,
+        "cell_bars": null
+      },
+      "stays": [
+        {
+          "arrive": null,
+          "depart": null,
+          "status": "stayed",
+          "occasion": null
+        }
+      ],
+      "sites": [
+        {
+          "number": "6",
+          "site_type": null,
+          "max_length_ft": null,
+          "fits_our_rig": null,
+          "pad_surface": null,
+          "levelness": null,
+          "electric": "none",
+          "water": false,
+          "sewer": false,
+          "utilities_side": null,
+          "solar_exposure": null,
+          "starlink_sky": null,
+          "afternoon_sun": null,
+          "noise": null,
+          "to_bathhouse_ft": null,
+          "verdict": "Perfect. The one to get.",
+          "notes": "Views of buffalo and wild turkey, and many species of bird. No hookups (campground-wide). Generator use 8 a.m. to 8 p.m. local time.",
+          "photos": []
+        }
+      ]
+    },
+    {
+      "id": "cottonwood-trnp-south",
+      "name": "Cottonwood Campground (TRNP South Unit)",
+      "location": {
+        "city": "Medora",
+        "region": "ND",
+        "country": "USA",
+        "lat": null,
+        "lon": null
+      },
+      "type": "national_park",
+      "website": "https://www.nps.gov/thro/planyourvisit/camping.htm",
+      "phone": null,
+      "reservation_system": "Recreation.gov for about half the sites; remainder first-come, first-served",
+      "season": null,
+      "price_range": null,
+      "epsilon_approved": null,
+      "overall": "South Unit campground on the Little Missouri. No hookups, generators 8 a.m. to 8 p.m. local. Site choice matters more here than at Juniper — the pull-throughs are not all what they look like on the map.",
+      "amenities": {
+        "dump": null,
+        "potable_water": true,
+        "laundry": false,
+        "showers": false,
+        "wifi_quality": null,
+        "cell_carrier": null,
+        "cell_bars": null
+      },
+      "stays": [
+        {
+          "arrive": null,
+          "depart": null,
+          "status": "stayed",
+          "occasion": null
+        }
+      ],
+      "sites": [
+        {
+          "number": "5",
+          "site_type": "pull_through",
+          "max_length_ft": null,
+          "fits_our_rig": false,
+          "pad_surface": null,
+          "levelness": null,
+          "electric": "none",
+          "water": false,
+          "sewer": false,
+          "utilities_side": null,
+          "solar_exposure": null,
+          "starlink_sky": null,
+          "afternoon_sun": null,
+          "noise": null,
+          "to_bathhouse_ft": null,
+          "verdict": "Avoid.",
+          "notes": "Does not really allow for a pull-through despite appearances.",
+          "photos": []
+        },
+        {
+          "number": "21",
+          "site_type": null,
+          "max_length_ft": null,
+          "fits_our_rig": null,
+          "pad_surface": null,
+          "levelness": null,
+          "electric": "none",
+          "water": false,
+          "sewer": false,
+          "utilities_side": null,
+          "solar_exposure": null,
+          "starlink_sky": null,
+          "afternoon_sun": null,
+          "noise": null,
+          "to_bathhouse_ft": null,
+          "verdict": "Seek this one.",
+          "notes": "Among the best sites in the campground.",
+          "photos": []
+        },
+        {
+          "number": "23",
+          "site_type": null,
+          "max_length_ft": null,
+          "fits_our_rig": null,
+          "pad_surface": null,
+          "levelness": null,
+          "electric": "none",
+          "water": false,
+          "sewer": false,
+          "utilities_side": null,
+          "solar_exposure": null,
+          "starlink_sky": null,
+          "afternoon_sun": null,
+          "noise": null,
+          "to_bathhouse_ft": null,
+          "verdict": "Seek this one.",
+          "notes": "Among the best sites in the campground.",
+          "photos": []
+        },
+        {
+          "number": "25",
+          "site_type": null,
+          "max_length_ft": null,
+          "fits_our_rig": null,
+          "pad_surface": null,
+          "levelness": null,
+          "electric": "none",
+          "water": false,
+          "sewer": false,
+          "utilities_side": null,
+          "solar_exposure": null,
+          "starlink_sky": null,
+          "afternoon_sun": null,
+          "noise": null,
+          "to_bathhouse_ft": null,
+          "verdict": "Seek this one.",
+          "notes": "Among the best sites in the campground.",
+          "photos": []
+        },
+        {
+          "number": "26",
+          "site_type": null,
+          "max_length_ft": null,
+          "fits_our_rig": null,
+          "pad_surface": null,
+          "levelness": null,
+          "electric": "none",
+          "water": false,
+          "sewer": false,
+          "utilities_side": null,
+          "solar_exposure": null,
+          "starlink_sky": null,
+          "afternoon_sun": null,
+          "noise": null,
+          "to_bathhouse_ft": null,
+          "verdict": "Seek this one.",
+          "notes": "Among the best sites in the campground.",
           "photos": []
         }
       ]
