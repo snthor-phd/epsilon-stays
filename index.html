@@ -26,10 +26,9 @@
 
   <section class="controls">
     <input type="search" id="q" placeholder="Search campgrounds&hellip;" aria-label="Search">
-    <select id="region"><option value="">All states / provinces</option><option value="MB">MB</option><option value="MI">MI</option><option value="MN">MN</option><option value="ND">ND</option><option value="OH">OH</option></select>
-    <select id="type"><option value="">All types</option><option value="fairgrounds">Fairgrounds</option><option value="harvest_hosts">Harvest Hosts</option><option value="membership">Membership</option><option value="national_park">National Park</option><option value="other">Other</option><option value="private">Private</option><option value="state_park">State Park</option></select>
+    <select id="region"><option value="">All states / provinces</option><option value="MI">MI</option><option value="MN">MN</option><option value="ND">ND</option><option value="OH">OH</option></select>
+    <select id="type"><option value="">All types</option><option value="fairgrounds">Fairgrounds</option><option value="harvest_hosts">Harvest Hosts</option><option value="membership">Membership</option><option value="national_park">National Park</option><option value="other">Other</option><option value="private">Private</option></select>
     <label class="check"><input type="checkbox" id="approved"> Epsilon Approved only</label>
-    <label class="check"><input type="checkbox" id="stayedonly"> Stayed only</label>
   </section>
 
   <section id="list" class="cards">
@@ -60,26 +59,14 @@
   <article class="card" data-type="national_park"
       data-region="ND"
       data-approved="0"
-      data-status="planned"
+      data-status="stayed"
       data-name="cottonwood campground (trnp south unit)">
     <h2><a href="c/cottonwood-trnp-south/index.html">Cottonwood Campground (TRNP South Unit)</a> </h2>
     <p class="meta">Medora, ND &middot; National Park</p>
     <p class="meta">4 sites noted
-       &middot; <em>not yet stayed</em></p>
+       &middot; last stayed 2026-09-01</p>
     <p class="excerpt">South Unit campground on the Little Missouri. No hookups, generators 8 a.m. to 8 p.m. local. Site choice matters more here than at Juniper — the pull-throughs are not all what they</p>
     <p class="meta has-map">&#9906; Campground map available</p>
-  </article>
-  <article class="card" data-type="state_park"
-      data-region="ND"
-      data-approved="0"
-      data-status="planned"
-      data-name="icelandic state park">
-    <h2><a href="c/icelandic-sp-cavalier/index.html">Icelandic State Park</a> </h2>
-    <p class="meta">Cavalier, ND &middot; State Park</p>
-    <p class="meta">0 sites noted
-       &middot; <em>not yet stayed</em></p>
-    <p class="excerpt">North Dakota state park on the Tongue River at Cavalier, the last stop before the Pembina–Emerson crossing. Electric, pull-thrus, dump station. Holds the Gunlogson homestead and an</p>
-    
   </article>
   <article class="card" data-type="private"
       data-region="ND"
@@ -104,30 +91,6 @@
        &middot; last stayed 2026-08-30</p>
     <p class="excerpt">Dry camping in the quieter North Unit, five miles in from the Highway 85 entrance along the Little Missouri. No hookups anywhere in the campground, generators 8 a.m. to 8 p.m. loca</p>
     <p class="meta has-map">&#9906; Campground map available</p>
-  </article>
-  <article class="card" data-type="state_park"
-      data-region="ND"
-      data-approved="0"
-      data-status="planned"
-      data-name="lake metigoshe state park">
-    <h2><a href="c/lake-metigoshe-sp/index.html">Lake Metigoshe State Park</a> </h2>
-    <p class="meta">Bottineau, ND &middot; State Park</p>
-    <p class="meta">0 sites noted
-       &middot; <em>not yet stayed</em></p>
-    <p class="excerpt">North Dakota state park in the Turtle Mountains, two miles from the Canadian border. Electric sites, pull-thrus, dump station, cabins. International Peace Garden a half-hour east.</p>
-    
-  </article>
-  <article class="card" data-type="state_park"
-      data-region="ND"
-      data-approved="0"
-      data-status="planned"
-      data-name="lake sakakawea state park">
-    <h2><a href="c/lake-sakakawea-sp/index.html">Lake Sakakawea State Park</a> </h2>
-    <p class="meta">Pick City, ND &middot; State Park</p>
-    <p class="meta">0 sites noted
-       &middot; <em>not yet stayed</em></p>
-    <p class="excerpt">North Dakota state park on the third-largest reservoir in the U.S. by area, beside Garrison Dam. Electric sites, pull-thrus, dump station.</p>
-    
   </article>
   <article class="card" data-type="membership"
       data-region="MN"
@@ -165,18 +128,6 @@
     <p class="excerpt">Campground attached to the Sauder Village living-history museum in northwest Ohio. Full hookups on pull-thrus, big-rig access, dump station.</p>
     
   </article>
-  <article class="card" data-type="private"
-      data-region="MB"
-      data-approved="0"
-      data-status="planned"
-      data-name="town &amp; country campground">
-    <h2><a href="c/town-and-country-winnipeg/index.html">Town &amp; Country Campground</a> </h2>
-    <p class="meta">Winnipeg, MB &middot; Private</p>
-    <p class="meta">1 site noted
-       &middot; <em>not yet stayed</em></p>
-    <p class="excerpt"></p>
-    
-  </article>
   <article class="card" data-type="harvest_hosts"
       data-region="MN"
       data-approved="0"
@@ -199,7 +150,6 @@
       region = document.getElementById('region'),
       type = document.getElementById('type'),
       approved = document.getElementById('approved'),
-      stayedonly = document.getElementById('stayedonly'),
       cards = Array.prototype.slice.call(document.querySelectorAll('.card')),
       empty = document.getElementById('empty');
 
@@ -211,13 +161,12 @@
       if (region.value && c.dataset.region !== region.value) ok = false;
       if (type.value && c.dataset.type !== type.value) ok = false;
       if (approved.checked && c.dataset.approved !== '1') ok = false;
-      if (stayedonly.checked && c.dataset.status !== 'stayed') ok = false;
       c.hidden = !ok;
       if (ok) shown++;
     });
     empty.hidden = shown !== 0;
   }
-  [q, region, type, approved, stayedonly].forEach(function (el) {
+  [q, region, type, approved].forEach(function (el) {
     el.addEventListener('input', apply);
     el.addEventListener('change', apply);
   });

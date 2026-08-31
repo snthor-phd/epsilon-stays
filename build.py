@@ -106,7 +106,7 @@ def fitting_sites(cg):
 def build_index(data):
     meta, cgs = data["meta"], data["campgrounds"]
     cards = []
-    for cg in sorted(cgs, key=lambda c: c["name"]):
+    for cg in sorted([c for c in cgs if has_stayed(c)], key=lambda c: c["name"]):
         ls = last_stayed(cg)
         stayed = has_stayed(cg)
         loc = cg["location"]
@@ -128,8 +128,9 @@ def build_index(data):
     {'<p class="meta has-map">&#9906; Campground map available</p>' if (cg.get('map_file') or cg.get('map_url')) else ''}
   </article>""")
 
-    regions = sorted({c["location"].get("region") for c in cgs if c["location"].get("region")})
-    types = sorted({c.get("type") for c in cgs if c.get("type")})
+    pub = [c for c in cgs if has_stayed(c)]
+    regions = sorted({c["location"].get("region") for c in pub if c["location"].get("region")})
+    types = sorted({c.get("type") for c in pub if c.get("type")})
     region_opts = "".join(f'<option value="{esc(r)}">{esc(r)}</option>' for r in regions)
     type_opts = "".join(
         f'<option value="{esc(t)}">{esc(TYPE_LABELS.get(t, t))}</option>' for t in types)
@@ -146,7 +147,6 @@ def build_index(data):
     <select id="region"><option value="">All states / provinces</option>{region_opts}</select>
     <select id="type"><option value="">All types</option>{type_opts}</select>
     <label class="check"><input type="checkbox" id="approved"> Epsilon Approved only</label>
-    <label class="check"><input type="checkbox" id="stayedonly"> Stayed only</label>
   </section>
 
   <section id="list" class="cards">
@@ -161,7 +161,6 @@ def build_index(data):
       region = document.getElementById('region'),
       type = document.getElementById('type'),
       approved = document.getElementById('approved'),
-      stayedonly = document.getElementById('stayedonly'),
       cards = Array.prototype.slice.call(document.querySelectorAll('.card')),
       empty = document.getElementById('empty');
 
@@ -173,13 +172,12 @@ def build_index(data):
       if (region.value && c.dataset.region !== region.value) ok = false;
       if (type.value && c.dataset.type !== type.value) ok = false;
       if (approved.checked && c.dataset.approved !== '1') ok = false;
-      if (stayedonly.checked && c.dataset.status !== 'stayed') ok = false;
       c.hidden = !ok;
       if (ok) shown++;
     }});
     empty.hidden = shown !== 0;
   }}
-  [q, region, type, approved, stayedonly].forEach(function (el) {{
+  [q, region, type, approved].forEach(function (el) {{
     el.addEventListener('input', apply);
     el.addEventListener('change', apply);
   }});
@@ -256,7 +254,7 @@ def build_campground(data, cg):
         f"<li>{esc(s.get('arrive'))}{' &ndash; ' + esc(s['depart']) if s.get('depart') else ''} "
         f"&middot; <span class=\"tag\">{esc(s.get('status'))}</span>"
         f"{' &middot; ' + esc(s['occasion']) if s.get('occasion') else ''}</li>"
-        for s in cg.get("stays", []))
+        for s in cg.get("stays", []) if s.get("status") == "stayed")
 
     sites = cg.get("sites", [])
     sites_html = ("\n".join(site_row(s, rig_ft) for s in sites) if sites
@@ -315,14 +313,16 @@ def main():
     cdir = os.path.join(ROOT, "c")
     if os.path.isdir(cdir):
         shutil.rmtree(cdir)
-    for cg in data["campgrounds"]:
+    for cg in [c for c in data["campgrounds"] if has_stayed(c)]:
         d = os.path.join(cdir, cg["id"])
         os.makedirs(d, exist_ok=True)
         with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f:
             f.write(build_campground(data, cg))
         print(f"wrote c/{cg['id']}/index.html")
 
-    print(f"done — {len(data['campgrounds'])} campgrounds")
+    pubn = len([c for c in data["campgrounds"] if has_stayed(c)])
+    print(f"done — {pubn} published of {len(data['campgrounds'])} campgrounds "
+          f"({len(data['campgrounds']) - pubn} planned, held back)")
 
 
 if __name__ == "__main__":

@@ -91,3 +91,16 @@ commercial guide sites are copyrighted** — set `map_url` only and leave `map_f
 build renders an inline map when `map_file` is present and a plain outbound link when it isn't.
 
 Where a map exists but neither field is set, it simply doesn't render. Worth filling in over time.
+
+
+---
+
+## What gets published
+
+`build.py` renders **only campgrounds with at least one stay marked `stayed`**. Records whose
+stays are all `planned` stay in the JSON and stay off the live site, and a stayed campground's
+future visits are omitted from its own page.
+
+The reason is simple: a public list of where we will be on given dates is a schedule, not a
+guide. Flip a stay to `stayed` once it has happened and the campground appears on the next build.
+The build prints how many were held back so nothing gets silently lost.
