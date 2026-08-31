@@ -20,12 +20,12 @@
         "city": "Minot",
         "region": "ND",
         "country": "USA",
-        "lat": null,
-        "lon": null
+        "lat": 48.22936,
+        "lon": -101.25601
       },
       "type": "fairgrounds",
-      "website": null,
-      "phone": null,
+      "website": "http://www.ndstatefair.com/lodging/",
+      "phone": "701-857-7620",
       "reservation_system": "Event registration (69th Airstream Club International Rally)",
       "season": null,
       "price_range": null,
@@ -43,16 +43,17 @@
       "stays": [
         {
           "arrive": "2026-08-22",
-          "depart": "2026-08-27",
+          "depart": "2026-08-28",
           "status": "stayed",
-          "occasion": "69th Airstream Club International Rally"
+          "occasion": "The Rally"
         }
       ],
       "sites": [],
       "map_file": null,
       "map_url": null,
       "map_source": null,
-      "map_license": null
+      "map_license": null,
+      "address": "2005 Burdick Expy E, Minot, ND 58701"
     },
     {
       "id": "town-and-country-winnipeg",
@@ -61,12 +62,12 @@
         "city": "Winnipeg",
         "region": "MB",
         "country": "Canada",
-        "lat": null,
-        "lon": null
+        "lat": 49.82708,
+        "lon": -96.97868
       },
       "type": "private",
-      "website": null,
-      "phone": null,
+      "website": "https://www.townandcountrycamping.com/",
+      "phone": "204-256-2186",
       "reservation_system": null,
       "season": null,
       "price_range": null,
@@ -83,10 +84,10 @@
       },
       "stays": [
         {
-          "arrive": "2026-09-11",
-          "depart": null,
+          "arrive": "2026-09-12",
+          "depart": "2026-09-15",
           "status": "planned",
-          "occasion": "Northern Lights & Polar Bears caravan rendezvous"
+          "occasion": "Rendezvous"
         }
       ],
       "sites": [
@@ -114,7 +115,8 @@
       "map_file": null,
       "map_url": null,
       "map_source": null,
-      "map_license": null
+      "map_license": null,
+      "address": "56001 Murdock Rd, Springfield, MB R5T 0H3, Canada"
     },
     {
       "id": "juniper-trnp-north",
@@ -123,12 +125,12 @@
         "city": "Watford City",
         "region": "ND",
         "country": "USA",
-        "lat": null,
-        "lon": null
+        "lat": 47.59524,
+        "lon": -103.33324
       },
       "type": "national_park",
       "website": "https://www.nps.gov/thro/planyourvisit/camping.htm",
-      "phone": null,
+      "phone": "701-842-2333",
       "reservation_system": "First-come, first-served (standard sites non-reservable; group site via Recreation.gov)",
       "season": "Open year-round; water and dump station seasonal",
       "price_range": null,
@@ -145,8 +147,8 @@
       },
       "stays": [
         {
-          "arrive": null,
-          "depart": null,
+          "arrive": "2026-08-28",
+          "depart": "2026-08-30",
           "status": "stayed",
           "occasion": null
         }
@@ -176,7 +178,8 @@
       "map_file": "assets/maps/juniper-trnp-north.png",
       "map_url": "https://www.nps.gov/thro/planyourvisit/juniper-campground.htm",
       "map_source": "National Park Service",
-      "map_license": "public-domain-us-gov"
+      "map_license": "public-domain-us-gov",
+      "address": "US Hwy 85, Theodore Roosevelt National Park, ND 58645"
     },
     {
       "id": "cottonwood-trnp-south",
@@ -185,12 +188,12 @@
         "city": "Medora",
         "region": "ND",
         "country": "USA",
-        "lat": null,
-        "lon": null
+        "lat": 46.94846,
+        "lon": -103.52811
       },
       "type": "national_park",
       "website": "https://www.nps.gov/thro/planyourvisit/camping.htm",
-      "phone": null,
+      "phone": "701-623-4466",
       "reservation_system": "Recreation.gov for about half the sites; remainder first-come, first-served",
       "season": "North loop year-round; south loop mid-May to September",
       "price_range": null,
@@ -207,9 +210,9 @@
       },
       "stays": [
         {
-          "arrive": null,
-          "depart": null,
-          "status": "stayed",
+          "arrive": "2026-08-30",
+          "depart": "2026-09-01",
+          "status": "planned",
           "occasion": null
         }
       ],
@@ -298,7 +301,386 @@
       "map_file": "assets/maps/cottonwood-trnp-south.png",
       "map_url": "https://www.nps.gov/thro/planyourvisit/map-of-cottonwood-campground.htm",
       "map_source": "National Park Service",
-      "map_license": "public-domain-us-gov"
+      "map_license": "public-domain-us-gov",
+      "address": "E River Rd, Theodore Roosevelt National Park, Medora, ND 58645"
+    },
+    {
+      "id": "sauder-village-archbold",
+      "name": "Sauder Village Campground",
+      "location": {
+        "city": "Archbold",
+        "region": "OH",
+        "country": "USA",
+        "lat": 41.54048,
+        "lon": -84.30134
+      },
+      "address": "22611 State Route 2, Archbold, OH 43502",
+      "type": "private",
+      "website": "https://saudervillage.org/stay/sauder-village-campground/camper-rv-sites",
+      "phone": "419-446-2541",
+      "reservation_system": null,
+      "season": null,
+      "price_range": null,
+      "epsilon_approved": null,
+      "overall": "Campground attached to the Sauder Village living-history museum in northwest Ohio. Full hookups on pull-thrus, big-rig access, dump station.",
+      "map_file": null,
+      "map_url": null,
+      "map_source": null,
+      "map_license": null,
+      "amenities": {
+        "dump": true,
+        "potable_water": true,
+        "laundry": null,
+        "showers": null,
+        "wifi_quality": null,
+        "cell_carrier": null,
+        "cell_bars": null
+      },
+      "stays": [
+        {
+          "arrive": "2026-08-13",
+          "depart": "2026-08-16",
+          "status": "stayed",
+          "occasion": "Shakedown"
+        }
+      ],
+      "sites": []
+    },
+    {
+      "id": "camp-grayling-mi",
+      "name": "Camp Grayling Trailer Park",
+      "location": {
+        "city": "Grayling",
+        "region": "MI",
+        "country": "USA",
+        "lat": 44.63467,
+        "lon": -84.77206
+      },
+      "address": "311 Howe Rd, Grayling, MI 49738",
+      "type": "other",
+      "website": "https://www.minationalguard.com/camp-grayling/camp-grayling-mwr/",
+      "phone": "989-348-9033",
+      "reservation_system": null,
+      "season": null,
+      "price_range": null,
+      "epsilon_approved": null,
+      "overall": "Michigan National Guard trailer park inside the gate at Camp Grayling. About 70 wooded sites, 20/30-amp with water, sewer and cable; only five 50-amp big-rig sites. Eligibility limited to military, retired, DAV, veteran caregivers and DoD civilians — bring the credential to the gate. Season runs first Saturday in May through September 30.",
+      "map_file": null,
+      "map_url": null,
+      "map_source": null,
+      "map_license": null,
+      "amenities": {
+        "dump": true,
+        "potable_water": true,
+        "laundry": null,
+        "showers": null,
+        "wifi_quality": "cable & wifi available",
+        "cell_carrier": null,
+        "cell_bars": null
+      },
+      "stays": [
+        {
+          "arrive": "2026-08-16",
+          "depart": "2026-08-17",
+          "status": "stayed",
+          "occasion": null
+        }
+      ],
+      "sites": []
+    },
+    {
+      "id": "au-train-lake-mi",
+      "name": "Au Train Lake Campground",
+      "location": {
+        "city": "Au Train",
+        "region": "MI",
+        "country": "USA",
+        "lat": 46.3917,
+        "lon": -86.8383
+      },
+      "address": "County Highway 596, Au Train, MI 49806",
+      "type": "other",
+      "website": "https://www.recreation.gov/camping/autrain-lake-campground/r/campgroundDetails.do?contractCode=NRSO&parkId=72064",
+      "phone": "906-387-2512",
+      "reservation_system": null,
+      "season": null,
+      "price_range": null,
+      "epsilon_approved": null,
+      "overall": "Hiawatha National Forest campground on Au Train Lake, twenty minutes off M-28. No hookups, potable water, vault toilets.",
+      "map_file": null,
+      "map_url": null,
+      "map_source": null,
+      "map_license": null,
+      "amenities": {
+        "dump": null,
+        "potable_water": true,
+        "laundry": null,
+        "showers": null,
+        "wifi_quality": null,
+        "cell_carrier": null,
+        "cell_bars": null
+      },
+      "stays": [
+        {
+          "arrive": "2026-08-17",
+          "depart": "2026-08-18",
+          "status": "stayed",
+          "occasion": null
+        }
+      ],
+      "sites": []
+    },
+    {
+      "id": "wild-state-cider-duluth",
+      "name": "Wild State Cider",
+      "location": {
+        "city": "Duluth",
+        "region": "MN",
+        "country": "USA",
+        "lat": 46.76286,
+        "lon": -92.1302
+      },
+      "address": "2515 Superior St, Duluth, MN 55806",
+      "type": "harvest_hosts",
+      "website": "https://wildstatecider.com/",
+      "phone": null,
+      "reservation_system": null,
+      "season": null,
+      "price_range": null,
+      "epsilon_approved": null,
+      "overall": "Host-style overnight in the cidery lot in Duluth — a parking lot, not a campground. No hookups, no water, no dump. One night, arrive in business hours, buy something.",
+      "map_file": null,
+      "map_url": null,
+      "map_source": null,
+      "map_license": null,
+      "amenities": {
+        "dump": null,
+        "potable_water": null,
+        "laundry": null,
+        "showers": null,
+        "wifi_quality": null,
+        "cell_carrier": null,
+        "cell_bars": null
+      },
+      "stays": [
+        {
+          "arrive": "2026-08-18",
+          "depart": "2026-08-19",
+          "status": "stayed",
+          "occasion": "Host stop"
+        }
+      ],
+      "sites": []
+    },
+    {
+      "id": "mn-airstream-park-clear-lake",
+      "name": "Minnesota Airstream Park",
+      "location": {
+        "city": "Clear Lake",
+        "region": "MN",
+        "country": "USA",
+        "lat": 45.45092,
+        "lon": -93.9785
+      },
+      "address": "8795 82nd St SE Unit 1, Clear Lake, MN 55319",
+      "type": "membership",
+      "website": "https://www.airstreampark.com/",
+      "phone": "320-743-2771",
+      "reservation_system": null,
+      "season": null,
+      "price_range": null,
+      "epsilon_approved": null,
+      "overall": "Member-run Airstream club park on the Mississippi at Clear Lake, one of the oldest in the country. Full hookups, dump station, big-rig access. St. Cloud twenty minutes west for resupply.",
+      "map_file": null,
+      "map_url": null,
+      "map_source": null,
+      "map_license": null,
+      "amenities": {
+        "dump": true,
+        "potable_water": true,
+        "laundry": null,
+        "showers": null,
+        "wifi_quality": null,
+        "cell_carrier": null,
+        "cell_bars": null
+      },
+      "stays": [
+        {
+          "arrive": "2026-08-19",
+          "depart": "2026-08-21",
+          "status": "stayed",
+          "occasion": "Club park"
+        }
+      ],
+      "sites": []
+    },
+    {
+      "id": "jamestown-campground-nd",
+      "name": "Jamestown Campground",
+      "location": {
+        "city": "Jamestown",
+        "region": "ND",
+        "country": "USA",
+        "lat": 46.89123,
+        "lon": -98.77689
+      },
+      "address": "3605 80th Ave SE, Jamestown, ND 58401",
+      "type": "private",
+      "website": "https://jamestowncampground.com",
+      "phone": "701-252-6262",
+      "reservation_system": null,
+      "season": null,
+      "price_range": null,
+      "epsilon_approved": null,
+      "overall": "Commercial campground off I-94 at Jamestown. Full hookups, pull-thrus, big-rig access, dump station.",
+      "map_file": null,
+      "map_url": null,
+      "map_source": null,
+      "map_license": null,
+      "amenities": {
+        "dump": true,
+        "potable_water": true,
+        "laundry": null,
+        "showers": null,
+        "wifi_quality": null,
+        "cell_carrier": null,
+        "cell_bars": null
+      },
+      "stays": [
+        {
+          "arrive": "2026-08-21",
+          "depart": "2026-08-22",
+          "status": "stayed",
+          "occasion": null
+        }
+      ],
+      "sites": []
+    },
+    {
+      "id": "lake-sakakawea-sp",
+      "name": "Lake Sakakawea State Park",
+      "location": {
+        "city": "Pick City",
+        "region": "ND",
+        "country": "USA",
+        "lat": 47.51959,
+        "lon": -101.45399
+      },
+      "address": "781 42 1/2 Ave NW, Pick City, ND 58545",
+      "type": "state_park",
+      "website": "https://www.parkrec.nd.gov/parks/lssp/lssp.html",
+      "phone": "701-487-3315",
+      "reservation_system": null,
+      "season": null,
+      "price_range": null,
+      "epsilon_approved": null,
+      "overall": "North Dakota state park on the third-largest reservoir in the U.S. by area, beside Garrison Dam. Electric sites, pull-thrus, dump station.",
+      "map_file": null,
+      "map_url": null,
+      "map_source": null,
+      "map_license": null,
+      "amenities": {
+        "dump": true,
+        "potable_water": null,
+        "laundry": null,
+        "showers": null,
+        "wifi_quality": null,
+        "cell_carrier": null,
+        "cell_bars": null
+      },
+      "stays": [
+        {
+          "arrive": "2026-09-01",
+          "depart": "2026-09-03",
+          "status": "planned",
+          "occasion": "Back on power"
+        }
+      ],
+      "sites": []
+    },
+    {
+      "id": "lake-metigoshe-sp",
+      "name": "Lake Metigoshe State Park",
+      "location": {
+        "city": "Bottineau",
+        "region": "ND",
+        "country": "USA",
+        "lat": 48.98318,
+        "lon": -100.33425
+      },
+      "address": "E Shore Park Rd, Bottineau, ND 58318",
+      "type": "state_park",
+      "website": "https://www.parkrec.nd.gov/parks/lmsp/lmsp.html",
+      "phone": "701-263-4651",
+      "reservation_system": null,
+      "season": null,
+      "price_range": null,
+      "epsilon_approved": null,
+      "overall": "North Dakota state park in the Turtle Mountains, two miles from the Canadian border. Electric sites, pull-thrus, dump station, cabins. International Peace Garden a half-hour east.",
+      "map_file": null,
+      "map_url": null,
+      "map_source": null,
+      "map_license": null,
+      "amenities": {
+        "dump": true,
+        "potable_water": null,
+        "laundry": null,
+        "showers": null,
+        "wifi_quality": null,
+        "cell_carrier": null,
+        "cell_bars": null
+      },
+      "stays": [
+        {
+          "arrive": "2026-09-03",
+          "depart": "2026-09-10",
+          "status": "planned",
+          "occasion": "The long stay"
+        }
+      ],
+      "sites": []
+    },
+    {
+      "id": "icelandic-sp-cavalier",
+      "name": "Icelandic State Park",
+      "location": {
+        "city": "Cavalier",
+        "region": "ND",
+        "country": "USA",
+        "lat": 48.77263,
+        "lon": -97.73952
+      },
+      "address": "13571 Highway 5, Cavalier, ND 58220",
+      "type": "state_park",
+      "website": "https://www.parkrec.nd.gov/parks/isp/isp.html",
+      "phone": "701-265-4561",
+      "reservation_system": null,
+      "season": null,
+      "price_range": null,
+      "epsilon_approved": null,
+      "overall": "North Dakota state park on the Tongue River at Cavalier, the last stop before the Pembina–Emerson crossing. Electric, pull-thrus, dump station. Holds the Gunlogson homestead and an old-growth floodplain nature preserve.",
+      "map_file": null,
+      "map_url": null,
+      "map_source": null,
+      "map_license": null,
+      "amenities": {
+        "dump": true,
+        "potable_water": null,
+        "laundry": null,
+        "showers": null,
+        "wifi_quality": null,
+        "cell_carrier": null,
+        "cell_bars": null
+      },
+      "stays": [
+        {
+          "arrive": "2026-09-10",
+          "depart": "2026-09-12",
+          "status": "planned",
+          "occasion": "Last U.S. stop"
+        }
+      ],
+      "sites": []
     }
   ]
 }

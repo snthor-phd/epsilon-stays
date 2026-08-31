@@ -26,24 +26,72 @@
 
   <section class="controls">
     <input type="search" id="q" placeholder="Search campgrounds&hellip;" aria-label="Search">
-    <select id="region"><option value="">All states / provinces</option><option value="MB">MB</option><option value="ND">ND</option></select>
-    <select id="type"><option value="">All types</option><option value="fairgrounds">Fairgrounds</option><option value="national_park">National Park</option><option value="private">Private</option></select>
+    <select id="region"><option value="">All states / provinces</option><option value="MB">MB</option><option value="MI">MI</option><option value="MN">MN</option><option value="ND">ND</option><option value="OH">OH</option></select>
+    <select id="type"><option value="">All types</option><option value="fairgrounds">Fairgrounds</option><option value="harvest_hosts">Harvest Hosts</option><option value="membership">Membership</option><option value="national_park">National Park</option><option value="other">Other</option><option value="private">Private</option><option value="state_park">State Park</option></select>
     <label class="check"><input type="checkbox" id="approved"> Epsilon Approved only</label>
     <label class="check"><input type="checkbox" id="stayedonly"> Stayed only</label>
   </section>
 
   <section id="list" class="cards">
+  <article class="card" data-type="other"
+      data-region="MI"
+      data-approved="0"
+      data-status="stayed"
+      data-name="au train lake campground">
+    <h2><a href="c/au-train-lake-mi/index.html">Au Train Lake Campground</a> </h2>
+    <p class="meta">Au Train, MI &middot; Other</p>
+    <p class="meta">0 sites noted
+       &middot; last stayed 2026-08-18</p>
+    <p class="excerpt">Hiawatha National Forest campground on Au Train Lake, twenty minutes off M-28. No hookups, potable water, vault toilets.</p>
+    
+  </article>
+  <article class="card" data-type="other"
+      data-region="MI"
+      data-approved="0"
+      data-status="stayed"
+      data-name="camp grayling trailer park">
+    <h2><a href="c/camp-grayling-mi/index.html">Camp Grayling Trailer Park</a> </h2>
+    <p class="meta">Grayling, MI &middot; Other</p>
+    <p class="meta">0 sites noted
+       &middot; last stayed 2026-08-17</p>
+    <p class="excerpt">Michigan National Guard trailer park inside the gate at Camp Grayling. About 70 wooded sites, 20/30-amp with water, sewer and cable; only five 50-amp big-rig sites. Eligibility lim</p>
+    
+  </article>
   <article class="card" data-type="national_park"
       data-region="ND"
       data-approved="0"
-      data-status="stayed"
+      data-status="planned"
       data-name="cottonwood campground (trnp south unit)">
     <h2><a href="c/cottonwood-trnp-south/index.html">Cottonwood Campground (TRNP South Unit)</a> </h2>
     <p class="meta">Medora, ND &middot; National Park</p>
     <p class="meta">4 sites noted
-       &middot; stayed &mdash; dates not recorded</p>
+       &middot; <em>not yet stayed</em></p>
     <p class="excerpt">South Unit campground on the Little Missouri. No hookups, generators 8 a.m. to 8 p.m. local. Site choice matters more here than at Juniper — the pull-throughs are not all what they</p>
     <p class="meta has-map">&#9906; Campground map available</p>
+  </article>
+  <article class="card" data-type="state_park"
+      data-region="ND"
+      data-approved="0"
+      data-status="planned"
+      data-name="icelandic state park">
+    <h2><a href="c/icelandic-sp-cavalier/index.html">Icelandic State Park</a> </h2>
+    <p class="meta">Cavalier, ND &middot; State Park</p>
+    <p class="meta">0 sites noted
+       &middot; <em>not yet stayed</em></p>
+    <p class="excerpt">North Dakota state park on the Tongue River at Cavalier, the last stop before the Pembina–Emerson crossing. Electric, pull-thrus, dump station. Holds the Gunlogson homestead and an</p>
+    
+  </article>
+  <article class="card" data-type="private"
+      data-region="ND"
+      data-approved="0"
+      data-status="stayed"
+      data-name="jamestown campground">
+    <h2><a href="c/jamestown-campground-nd/index.html">Jamestown Campground</a> </h2>
+    <p class="meta">Jamestown, ND &middot; Private</p>
+    <p class="meta">0 sites noted
+       &middot; last stayed 2026-08-22</p>
+    <p class="excerpt">Commercial campground off I-94 at Jamestown. Full hookups, pull-thrus, big-rig access, dump station.</p>
+    
   </article>
   <article class="card" data-type="national_park"
       data-region="ND"
@@ -53,9 +101,45 @@
     <h2><a href="c/juniper-trnp-north/index.html">Juniper Campground (TRNP North Unit)</a> <span class="badge">Epsilon Approved</span></h2>
     <p class="meta">Watford City, ND &middot; National Park</p>
     <p class="meta">1 site noted
-       &middot; stayed &mdash; dates not recorded</p>
+       &middot; last stayed 2026-08-30</p>
     <p class="excerpt">Dry camping in the quieter North Unit, five miles in from the Highway 85 entrance along the Little Missouri. No hookups anywhere in the campground, generators 8 a.m. to 8 p.m. loca</p>
     <p class="meta has-map">&#9906; Campground map available</p>
+  </article>
+  <article class="card" data-type="state_park"
+      data-region="ND"
+      data-approved="0"
+      data-status="planned"
+      data-name="lake metigoshe state park">
+    <h2><a href="c/lake-metigoshe-sp/index.html">Lake Metigoshe State Park</a> </h2>
+    <p class="meta">Bottineau, ND &middot; State Park</p>
+    <p class="meta">0 sites noted
+       &middot; <em>not yet stayed</em></p>
+    <p class="excerpt">North Dakota state park in the Turtle Mountains, two miles from the Canadian border. Electric sites, pull-thrus, dump station, cabins. International Peace Garden a half-hour east.</p>
+    
+  </article>
+  <article class="card" data-type="state_park"
+      data-region="ND"
+      data-approved="0"
+      data-status="planned"
+      data-name="lake sakakawea state park">
+    <h2><a href="c/lake-sakakawea-sp/index.html">Lake Sakakawea State Park</a> </h2>
+    <p class="meta">Pick City, ND &middot; State Park</p>
+    <p class="meta">0 sites noted
+       &middot; <em>not yet stayed</em></p>
+    <p class="excerpt">North Dakota state park on the third-largest reservoir in the U.S. by area, beside Garrison Dam. Electric sites, pull-thrus, dump station.</p>
+    
+  </article>
+  <article class="card" data-type="membership"
+      data-region="MN"
+      data-approved="0"
+      data-status="stayed"
+      data-name="minnesota airstream park">
+    <h2><a href="c/mn-airstream-park-clear-lake/index.html">Minnesota Airstream Park</a> </h2>
+    <p class="meta">Clear Lake, MN &middot; Membership</p>
+    <p class="meta">0 sites noted
+       &middot; last stayed 2026-08-21</p>
+    <p class="excerpt">Member-run Airstream club park on the Mississippi at Clear Lake, one of the oldest in the country. Full hookups, dump station, big-rig access. St. Cloud twenty minutes west for res</p>
+    
   </article>
   <article class="card" data-type="fairgrounds"
       data-region="ND"
@@ -65,8 +149,20 @@
     <h2><a href="c/nd-state-fairgrounds-minot/index.html">North Dakota State Fairgrounds</a> </h2>
     <p class="meta">Minot, ND &middot; Fairgrounds</p>
     <p class="meta">0 sites noted
-       &middot; last stayed 2026-08-27</p>
+       &middot; last stayed 2026-08-28</p>
     <p class="excerpt"></p>
+    
+  </article>
+  <article class="card" data-type="private"
+      data-region="OH"
+      data-approved="0"
+      data-status="stayed"
+      data-name="sauder village campground">
+    <h2><a href="c/sauder-village-archbold/index.html">Sauder Village Campground</a> </h2>
+    <p class="meta">Archbold, OH &middot; Private</p>
+    <p class="meta">0 sites noted
+       &middot; last stayed 2026-08-16</p>
+    <p class="excerpt">Campground attached to the Sauder Village living-history museum in northwest Ohio. Full hookups on pull-thrus, big-rig access, dump station.</p>
     
   </article>
   <article class="card" data-type="private"
@@ -79,6 +175,18 @@
     <p class="meta">1 site noted
        &middot; <em>not yet stayed</em></p>
     <p class="excerpt"></p>
+    
+  </article>
+  <article class="card" data-type="harvest_hosts"
+      data-region="MN"
+      data-approved="0"
+      data-status="stayed"
+      data-name="wild state cider">
+    <h2><a href="c/wild-state-cider-duluth/index.html">Wild State Cider</a> </h2>
+    <p class="meta">Duluth, MN &middot; Harvest Hosts</p>
+    <p class="meta">0 sites noted
+       &middot; last stayed 2026-08-19</p>
+    <p class="excerpt">Host-style overnight in the cidery lot in Duluth — a parking lot, not a campground. No hookups, no water, no dump. One night, arrive in business hours, buy something.</p>
     
   </article>
   </section>

@@ -24,6 +24,7 @@
 | `id` | string | URL slug, lowercase-hyphenated. Becomes `/c/<id>/` |
 | `name` | string | |
 | `location` | object | `city`, `region` (state/province), `country`, `lat`, `lon` |
+| `address` | string/null | Street address as posted |
 | `type` | enum | `state_park`, `national_park`, `coe`, `county`, `city`, `private`, `membership`, `harvest_hosts`, `fairgrounds`, `boondock`, `other` |
 | `website` | string/null | |
 | `phone` | string/null | |

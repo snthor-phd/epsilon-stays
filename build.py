@@ -273,6 +273,7 @@ def build_campground(data, cg):
   <section>
     <h2>The campground</h2>
     <dl class="sitegrid">
+      <div><dt>Address</dt><dd>{dash(cg.get('address'))}</dd></div>
       <div><dt>Reservations</dt><dd>{dash(cg.get('reservation_system'))}</dd></div>
       <div><dt>Season</dt><dd>{dash(cg.get('season'))}</dd></div>
       <div><dt>Price</dt><dd>{dash(cg.get('price_range'))}</dd></div>
