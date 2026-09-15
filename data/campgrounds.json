@@ -2,7 +2,7 @@
   "meta": {
     "site_title": "Epsilon Stays",
     "tagline": "Where we stayed, and which site to ask for.",
-    "updated": "2026-08-30",
+    "updated": "2026-09-15",
     "rig": {
       "trailer": "2022 Airstream Globetrotter 23FB Twin",
       "trailer_ft": 24,
@@ -71,12 +71,12 @@
       "reservation_system": null,
       "season": null,
       "price_range": null,
-      "epsilon_approved": null,
-      "overall": "",
+      "epsilon_approved": true,
+      "overall": "Big private campground just east of Winnipeg, and the rendezvous point for the Northern Lights & Polar Bears caravan. Level sites, full hookups, and pull-throughs long enough to take anything we'd bring. Sites sit a little close together, but there's still plenty of room to live outside. Laundry is clean and well kept - $2.75 CAD to wash, $2.00 to dry. There's a store on site with fresh ice cream, and a restaurant area. We took site 165, and most of the rest look just as good.",
       "amenities": {
         "dump": null,
-        "potable_water": null,
-        "laundry": null,
+        "potable_water": true,
+        "laundry": true,
         "showers": null,
         "wifi_quality": null,
         "cell_carrier": null,
@@ -86,29 +86,29 @@
         {
           "arrive": "2026-09-12",
           "depart": "2026-09-15",
-          "status": "planned",
+          "status": "stayed",
           "occasion": "Rendezvous"
         }
       ],
       "sites": [
         {
           "number": "165",
-          "site_type": null,
+          "site_type": "pull_through",
           "max_length_ft": null,
-          "fits_our_rig": null,
+          "fits_our_rig": true,
           "pad_surface": null,
-          "levelness": null,
+          "levelness": "level",
           "electric": null,
-          "water": null,
-          "sewer": null,
+          "water": true,
+          "sewer": true,
           "utilities_side": null,
           "solar_exposure": null,
           "starlink_sky": null,
           "afternoon_sun": null,
           "noise": null,
           "to_bathhouse_ft": null,
-          "verdict": "",
-          "notes": "Assigned site for the caravan rendezvous. Not yet stayed.",
+          "verdict": "We'd take it again. Level, full hookups, an easy pull-through - nothing to fuss with on arrival.",
+          "notes": "Neighbours are close, but the site still has room to sit out. Most other sites here are just as good; hard to go wrong.",
           "photos": []
         }
       ],
