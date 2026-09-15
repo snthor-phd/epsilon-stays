@@ -84,7 +84,7 @@
       },
       "stays": [
         {
-          "arrive": "2026-09-12",
+          "arrive": "2026-09-10",
           "depart": "2026-09-15",
           "status": "stayed",
           "occasion": "Rendezvous"
@@ -646,9 +646,9 @@
       },
       "stays": [
         {
-          "arrive": "2026-09-03",
-          "depart": "2026-09-10",
-          "status": "planned",
+          "arrive": "2026-09-05",
+          "depart": "2026-09-09",
+          "status": "stayed",
           "occasion": "The long stay"
         }
       ],
@@ -688,9 +688,9 @@
       },
       "stays": [
         {
-          "arrive": "2026-09-10",
-          "depart": "2026-09-12",
-          "status": "planned",
+          "arrive": "2026-09-09",
+          "depart": "2026-09-10",
+          "status": "stayed",
           "occasion": "Last U.S. stop"
         }
       ],
