@@ -98,7 +98,7 @@
           "fits_our_rig": true,
           "pad_surface": null,
           "levelness": "level",
-          "electric": null,
+          "electric": "50A",
           "water": true,
           "sewer": true,
           "utilities_side": null,
@@ -692,6 +692,48 @@
           "depart": "2026-09-10",
           "status": "stayed",
           "occasion": "Last U.S. stop"
+        }
+      ],
+      "sites": []
+    },
+    {
+      "id": "riverbend-neepawa",
+      "name": "Riverbend Campground",
+      "location": {
+        "city": "Neepawa",
+        "region": "MB",
+        "country": "Canada",
+        "lat": 50.22919,
+        "lon": -99.45547
+      },
+      "address": "500 Broadway Ave, Neepawa, MB, Canada",
+      "type": "city",
+      "website": "https://www.neepawa.ca/riverbend-campground/",
+      "phone": "204-476-7676",
+      "reservation_system": "letscamp.ca",
+      "season": null,
+      "price_range": null,
+      "epsilon_approved": null,
+      "overall": "Town-run campground on the Whitemud River at Neepawa, operated with the Neepawa Lions. A caravan stop on the way west from Winnipeg. Nothing recorded here yet from our own stay.",
+      "map_file": null,
+      "map_url": null,
+      "map_source": null,
+      "map_license": null,
+      "amenities": {
+        "dump": null,
+        "potable_water": null,
+        "laundry": null,
+        "showers": null,
+        "wifi_quality": null,
+        "cell_carrier": null,
+        "cell_bars": null
+      },
+      "stays": [
+        {
+          "arrive": "2026-09-15",
+          "depart": null,
+          "status": "planned",
+          "occasion": "NL&PB caravan"
         }
       ],
       "sites": []
