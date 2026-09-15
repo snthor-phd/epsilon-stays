@@ -595,7 +595,7 @@
       "season": null,
       "price_range": null,
       "epsilon_approved": null,
-      "overall": "North Dakota state park on the third-largest reservoir in the U.S. by area, beside Garrison Dam. Electric sites, pull-thrus, dump station.",
+      "overall": "North Dakota state park on the third-largest reservoir in the U.S. by area, beside Garrison Dam. Electric sites, pull-thrus, dump station. Planned as a stop in 2026 but we never made it, so there's nothing here we've seen first-hand.",
       "map_file": null,
       "map_url": null,
       "map_source": null,
@@ -609,14 +609,7 @@
         "cell_carrier": null,
         "cell_bars": null
       },
-      "stays": [
-        {
-          "arrive": "2026-09-01",
-          "depart": "2026-09-03",
-          "status": "planned",
-          "occasion": "Back on power"
-        }
-      ],
+      "stays": [],
       "sites": []
     },
     {
@@ -636,8 +629,8 @@
       "reservation_system": null,
       "season": null,
       "price_range": null,
-      "epsilon_approved": null,
-      "overall": "North Dakota state park in the Turtle Mountains, two miles from the Canadian border. Electric sites, pull-thrus, dump station, cabins. International Peace Garden a half-hour east.",
+      "epsilon_approved": false,
+      "overall": "North Dakota state park in the Turtle Mountains, two miles from the Canadian border. Electric sites, pull-thrus, dump station, cabins. International Peace Garden a half-hour east. Not one we'd go back to. Too busy for us, and the gathering spaces between sites were muddy - not somewhere you want to set a chair. Mosquitos and other bugs were plentiful.",
       "map_file": null,
       "map_url": null,
       "map_source": null,
@@ -678,8 +671,8 @@
       "reservation_system": null,
       "season": null,
       "price_range": null,
-      "epsilon_approved": null,
-      "overall": "North Dakota state park on the Tongue River at Cavalier, the last stop before the Pembina–Emerson crossing. Electric, pull-thrus, dump station. Holds the Gunlogson homestead and an old-growth floodplain nature preserve.",
+      "epsilon_approved": true,
+      "overall": "North Dakota state park on the Tongue River at Cavalier, last stop before the Pembina-Emerson crossing. Electric, pull-thrus, dump station. Holds the Gunlogson homestead and an old-growth floodplain nature preserve. Beautiful park, and worth the stop. One caution: pick your site carefully. A few along the water aren't level, and side to side is what'll get you here - a cross-slope is the one you can't work around.",
       "map_file": null,
       "map_url": null,
       "map_source": null,
